@@ -1,0 +1,115 @@
+% cv example for classicthesis.sty
+\documentclass[10pt,a4paper]{scrartcl}
+%\usepackage[LabelsAligned]{currvita} % nice cv style
+\usepackage{url}
+\usepackage{concrete}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{caption}
+\usepackage{stmaryrd}
+\usepackage{bbold}
+
+
+\begin{document}
+
+    \title{Curriculum Vit\ae et Studiorum}
+
+    \author{Massimo Nocentini\\ 
+        \small{Dipartimento di Statistica, Informatica e Applicazioni}\\
+        \small{50134, Florence, Italy}\\
+        \small{\url{https://github.com/massimo-nocentini}}\\
+        \small{\url{massimo.nocentini@unifi.it}}
+        }
+
+    \maketitle
+
+    \section{Personal informations}
+    
+    I was born in Italy, 8 January 1986 and live in Florence, Via Ronco Corto 98,
+    50143, Italy. Currently I'm a PhD student at the University of Florence, 
+    Dipartimento di Statistica, Informatica e Applicazioni (DiSIA), working
+    with prof. Donatella Merlini.
+
+    \section{Education}
+    \begin{itemize}
+        \item maturit\`a
+        \item laurea magistrale
+    \end{itemize}
+
+    \section{Scientific activity}
+    
+    His research activity is mainly concerned with the study of 
+    formal methods and their application to the analysis of algorithms and data structures, 
+    supported by implementations written using symbolic and functional languages.
+
+    A solid base for such methods comes from the field of analytic combinatorics, 
+    which comprises tools such as generating functions, Riordan arrays and the symbolic method. Many
+    interesting books by Flajolet and Sedgewick\footnote{P. Flajolet and R.
+    Sedgewick, \emph{Analytic Combinatorics}, Cambridge University Press, 2009.},
+    Knuth\footnote{D. Knuth, \emph{The Art of Computer Programming}, vol.  1-3,
+    Addison-Wesley, 1973.} and Graham et al. \footnote{Graham, Knuth and Patashnik,
+    \emph{Concrete Mathematics: A Foundation for Computer Science}, Addison-Wesley,
+    1994} exist on those topics, where skillful methods to handle sequences of
+    \emph{counting numbers}, combinatorial sums and classes of combinatorial
+    discrete objects, such as graphs, words, lattice paths and trees, are
+    presented. 
+
+
+    He's interest is to have a solid grasp of such powerful techniques in order to
+    think about combinatorial \emph{interpretations} of
+    analytic results about classes of abstract objects in order to show
+    \emph{combinatorial meanings} and, possibly, characterizations in terms
+    of lattice paths, urn models, bracelet configurations, domino and square
+    tiling and so on, in the spirit of Benjamin and Quinn \footnote{Benjamin
+    and Quinn, \emph{Proofs that really counts}, Mathematical Association of
+    America, 2003} and Stanley\footnote{Richard Stanley, \emph{Enumerative
+    combinatorics. {V}ol. 1\&2}, Cambridge University Press}. Moreover, he wants
+    to apply such techniques and interpretations to the analysis of algorithms
+    as far as the analytic aspect is concerned, and to data structures for the
+    combinatorial one. 
+
+    He believe that all this abstract and formal context should be paired up with
+    sounding computer programs that show the beauty and elegance of such topics;
+    this parallel path allows it to enhance and deepen his knowledge in functional
+    and symbolic programming, using languages like Lisp, Python and Haskell in his daily work.
+    For this reason, during the first year of his PhD, he wrote a bunch of Jupyter 
+    notebooks about Gray codes, backtracking algorithms applied to tiling problems
+    and the generation of recursive structures, bit-masking techniques to speed up
+    symbolic computations\footnote{\url{https://github.com/massimo-nocentini/competitive-programming/tree/master/tutorials}}.
+
+    At the same time, he continues to work on Riordan Arrays, studied in his
+    master thesis\footnote{\textit{Patterns in Riordan Arrays}, Massimo Nocentini, October 2015, University of Florence}, 
+    focusing on new characterizations to spot properties of their
+    structure. One example is the $h$-characterization $\mathcal{R}_{h(t)}$ of a
+    Riordan array $\mathcal{R}$, developed and explored within the thesis.
+    Another path that he is following is the study of two important objects, $A$-sequence
+    $\lbrace a_{n}\rbrace_{n\in\mathbb{N}}$ and $A$-matrix $\lbrace
+    a_{ij}\rbrace_{i,j\in\mathbb{N}}$ respectively, generalizing them in order to
+    discover new combinatorial identities. This approach is supported by a framework
+    written using the Python language that performs unfolding of recurrence relations
+    from the symbolic point of view: this is a work in progress project yet ready
+    to be stressed against relations of general interest\footnote{\url{https://github.com/massimo-nocentini/recurrences-unfolding}}.
+    Currently, his is working with prof. Donatella Merlini\footnote{\url{donatella.merlini@unifi.it}}
+    to advanced topic involving Riordan arrays, in particular binary words avoiding patterns, 
+    lattice paths enumeration problems and transformations of infinite sequences of numbers.
+
+
+    The other topic of his thesis shows his interest in the description and formalization of Riordan
+    arrays under the light of modular arithmetic. He has shown congruences
+    about \emph{Pascal} array $\mathcal{P}$ and its inverse $\mathcal{P}^{-1}$. He
+    has also proved a formal characterization for the \emph{Catalan} array
+    $\mathcal{C}$. These results were presented in a talk contributed at a recent
+    conference held in Lecco\footnote{Second International Symposium on Riordan
+    Arrays and Related Topics, RART$2015$} and is the topic of a submitted paper.
+
+    \section{Working activity}
+
+    During his studies he worked in middle-size software houses developing mainly client-server
+    applications using industrial-strength languages such as Java and C\#, for about eight years.
+        
+
+\end{document}
