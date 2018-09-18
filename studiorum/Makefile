@@ -2,17 +2,5 @@
 pdf:
 	lualatex cv-studiorum.tex
 
-open:
-	evince cv-studiorum.pdf &
-	
-
-pdf1:
-	pdflatex sig-clean.tex
-
-pdf-bib:
-	pdflatex sig-clean.tex
-	bibtex sig-clean
-	pdflatex sig-clean.tex
-	pdflatex sig-clean.tex
-
-
+clear:
+	rm -f cv-studiorum.aux cv-studiorum.log cv-studiorum.out cv-studiorum.pdf

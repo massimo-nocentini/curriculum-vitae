@@ -1,41 +1,50 @@
 % cv example for classicthesis.sty
-\documentclass[10pt,a4paper]{scrartcl}
+%\documentclass{scrartcl}
+\documentclass[a4paper]{tufte-handout}
 %\usepackage[LabelsAligned]{currvita} % nice cv style
 \usepackage{url}
-\usepackage{concrete}
-\usepackage[T1]{fontenc}
+\usepackage{inputenc}
+\usepackage{fontenc}
+\usepackage{textcomp}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amssymb}
-\usepackage{caption}
+\usepackage{eulervm}
 \usepackage{stmaryrd}
 \usepackage{bbold}
 
+% solved in https://github.com/Tufte-LaTeX/tufte-latex/issues/64
+\renewcommand\allcapsspacing[1]{{\addfontfeature{LetterSpace=15}#1}}
+\renewcommand\smallcapsspacing[1]{{\addfontfeature{LetterSpace=10}#1}}
+
+\setmonofont[Scale=0.8]{Menlo}
+\hypersetup{colorlinks}
 
 \begin{document}
 
     \title{Curriculum Vit\ae\,et Studiorum}
 
-    \author{Massimo Nocentini\\ 
-        \small{Dipartimento di Statistica, Informatica e Applicazioni}\\
-        \small{50134, Florence, Italy}\\
-        \small{\url{massimo.nocentini@unifi.it}}\\
-        \small{\url{https://github.com/massimo-nocentini}}\\
-        }
+    \author{Massimo Nocentini\newline
+        \small{{massimo.nocentini@gmail.com}},
+        \small{{massimo.nocentini@unifi.it}}\newline
+        \small{{https://github.com/massimo-nocentini}}
+    }
 
     \maketitle
 
     \section{Personal data}
     
-    Born in Italy, 8 January 1986; living in Via Ronco Corto 98, Florence 50143, Italy. 
+    I was born in Italy on 8 January 1986 and I live in Florence, Italy. 
 
     \section{Education}
 
-    Currently I'm a PhD student at the University of Florence, 
-    Dipartimento di Statistica, Informatica e Applicazioni (DiSIA), working
-    with prof. Donatella Merlini\footnote{\url{http://local.disia.unifi.it/merlini/}}.
+    Currently I'm a PhD student at the University of Florence, affiliated to the
+    Dipartimento di Statistica, Informatica e Applicazioni (DiSIA~
+    \footnote{\url{https://www.disia.unifi.it/}}), supervised by prof
+    \textit{Donatella Merlini}
+    \footnote{\url{http://local.disia.unifi.it/merlini/}}; in the past,
 
     \begin{itemize}
         \item Master Laurea degree in Computer Science, thesis title \emph{Patterns in Riordan arrays}, 
@@ -188,7 +197,7 @@
 
     \subsection{Seminars}
 
-    Given a summary of my first year PhD's activities, the talk is available on-line\footnote{\url{http://massimo-nocentini.github.io/PhD/first-year-summary/talk.html#/}}.
+    Given a summary of my first year PhD's activities, the talk is available on-line\footnote{\url{http://massimo-nocentini.github.io/PhD/first-year-summary/talk.html\#/}}.
 
     \subsection{Teaching}
 
