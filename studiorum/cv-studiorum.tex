@@ -91,8 +91,8 @@
 
     He believes that abstract and formal contexts should be paired up with
     sounding computer programs that show their beauty and elegance; this
-    parallel path allows him to code in Lisp, Python, OCaml and Haskell during
-    his daily work.
+    parallel path allows him to code in Lisp, Python, OCaml, Smalltalk and
+    Haskell during his daily work.
 
     Currently, he is supervised and collaborates with prof \textit{Donatella
     Merlini} on advanced topic about \textit{Riordan arrays}, in particular on
@@ -121,61 +121,6 @@
         \item Donatella Merlini, Massimo Nocentini. \emph{Colouring Catalan triangle}.
 
     \end{itemize}
-    
-    \iffalse
-        \item \emph{Recurrence unfolding}\sidenote{\url{https://github.com/massimo-nocentini/recurrences-unfolding}}: 
-            We provide a framework, written using the Python language
-            on top of \texttt{SymPy} module, to perform arbitrary unfolding of recurrence relations. The main idea
-            is to consider a set of possibly mutually defined recurrence relations, call it $\Omega$, and use each
-            one of them as a \emph{rewriting rule} in the sense of using the left-hand side (``lhs'' for short) 
-            as a term to be matched in order to instantiate the right-hand side (``rhs'', respectively) accordingly; 
-            finally, use the new rhs as a replacement for the term that starts the matching. 
-
-            Unlike "plain" substitution, we perform an extended matching strategy on the lhs, 
-            allowing the mathematician to write relations that include a coefficient in the lhs: so a term in the rhs
-            matches successful if it is possible to find a substitution for free variables that makes equal both
-            the indexed symbol and the coefficient.
-
-            To the time of this document, we have a working prototype for relations that involve indexed terms of the
-            form $f_{n_{1}, \ldots, n_{k}}$ for desired $k\in\mathbb{N}$, with the constraint that the recurrence relation 
-            use constant coefficients. We're working to fully handle arbitrary recurrence relations. For the sake of 
-            clarity, we show, first, an application to the sequence of Fibonacci numbers\sidenote{\url{http://nbviewer.jupyter.org/github/massimo-nocentini/recurrences-unfolding/blob/master/notebooks/fibonacci-numbers-unary-indexed-unfolding.ipynb}},
-            according to the unary-indexed recurrence $f_{n+2}=f_{n+1}+f_{n}$; second, an application to the Pascal array
-            \sidenote{\url{http://nbviewer.jupyter.org/github/massimo-nocentini/recurrences-unfolding/blob/master/notebooks/pascal-array-doubly-indexed-unfolding.ipynb}},
-            according to the doubly-indexed recurrence $d_{n+1,k+1} = d_{n,k}+d_{n,k+1}$.
-
-            We aim to show possibly new or hard to recognize identities over classes of combinatorial objects counted by
-            relations under study; therefore, this prototype could be seen as an helper for the mathematician to understand
-            how a recurrence behaves doing unfolding, leaving to him/her the analytic check of spotted patterns seen 
-            while unfolding the recurrence. In preparation.
-
-        \item \emph{Riordan Arrays}: Following ideas of unfolding recurrence relations, we consider matrices in the Riordan group,
-            leaving them completely symbolical, focusing only on their $A$-sequences which dictates relations among coefficients.
-            We choose a row $r$ and start to unfold coefficients from row $r+1$ to the last, in order to build a matrix that 
-            depends on a small set of coefficients, namely those lying on the former $r+1$ rows. This allow us to rewrite
-            the original matrix as a sum of ``inner'' matrices, all of them sharing the same relation among coefficients.
-            We're working on a prototype that built such splitting, collecting material in a notebook
-            \sidenote{\url{http://nbviewer.jupyter.org/github/massimo-nocentini/recurrences-unfolding/blob/master/notebooks/matrix-recurrences-unfolding.ipynb}}.
-            In preparation.
-
-        \item\emph{OEIS mining}: We develop a \emph{web-crawler} targeting the OEIS \sidenote{\url{http://oeis.org/}}, in order
-            to fetch sequences according to the \emph{cross-references} section included in search results. Collected 
-            informations can be represented as a graph, where each node represent a sequence and there is a reference
-            between two sequences if they appears in the cited section. Such graph can be manipulated in order to remove
-            not interesting sequences for the study of interest, in order to apply graph mining techniques. This is an
-            ongoing project, however we have a first application\sidenote{\url{http://nbviewer.jupyter.org/github/massimo-nocentini/competitive-programming/blob/master/tutorials/oeis-mining.ipynb?flush_cache=true}}. In preparation.
-
-        \item\emph{OEIS search result pretty printer}: On top of the web-crawler defined in the previous topic, 
-            we provide a bunch of Python functions to implement a
-            \emph{pretty printer} for search result returned by OEIS. Use Jupyter notebook as working
-            environments, we provide an API in order to query the OEIS by either sequence identifier or
-            segment or open content, parsing results as json documents and returning an IPython display object
-            that shows them directly in your notebook. This approach has the following ideas: simple API to 
-            perform a search, filtering all sections provided by the OEIS, list and table representation 
-            for sequences that have one and two dimensions, respectively. We believe that having an integrated
-            environment, without neither switching between browser tabs nor put references to external contents, 
-            allows us to build reproducible, self-contained notebooks. We provide a tutorial\sidenote{\url{http://nbviewer.jupyter.org/github/massimo-nocentini/competitive-programming/blob/master/tutorials/oeis-interaction.ipynb?flush_cache=true}}. In preparation.
-    \fi
     
     \section{Conferences}
 
@@ -210,11 +155,106 @@
 
     \section{Github}
 
+    Recently he joined the \textit{Square Bracket Associates} organization; moreover,
+    he pushes into the following repos:
+    \begin{description}
+        \item[https://github.com/massimo-nocentini/on-scheme] holds stuff about
+        the Scheme dialect of Lisp. In particular, here he explores
+        \textit{continuations, $\mu$Kanren, union-find structures, lazy streams
+        memoization} and \textit{abstract computing devices (Landin's SECD machine)}.
+
+        \item[https://github.com/massimo-nocentini/microkanrenst] holds his
+        Smalltalk implementation of $\mu$Kanren, shown at ESUG2018; precisely,
+        it provides \textit{triangular substitutions, complete (but unfair)
+        solutions enumeration} and \textit{structural induction by heavy double
+        dispatchings}.
+
+        \item[https://github.com/massimo-nocentini/Booklet-microKanren] holds
+        docs and explanations of the relational paradigm provided in the repo before,
+        using Pillar as writing environment, just started.
+
+        \item[https://github.com/massimo-nocentini/kanren-light] holds a
+        parallel goals and tactics mechanism for Harrison's \textit{HOL Light}
+        theorem prover that is inspired by $\mu$Kanren, co-authored with prof
+        Marco Maggesi.
+
+        \item[https://github.com/massimo-nocentini/simulation-methods] holds
+        the implementation of the framework of matrices functions, namely the
+        process that lifts a scalar function to a matrix function using
+        eigenvalues and generalized Lagrange bases.
+
+        \item[https://github.com/massimo-nocentini/oeis-tools] holds a suite of tools
+        to mine the Online Encyclopedia of Integer Sequences, providing a crawler,
+        a pretty printer and a grapher of relations among sequences of numbers; implemented
+        in Python, allows him to play with \verb|async| and \verb|await| primitives.
+
+        \item[https://github.com/massimo-nocentini/competitive-programming]
+        holds his solutions to a few problems from the UVa only judge;
+        moreover, some jupyter notebooks are provided about bitmasking,
+        backtracking, tilings, Gray codes, recursively-defined structures and
+        dynamic programming.
+
+        \item[https://github.com/massimo-nocentini/recurrences-unfolding] holds
+        a Python implementation of a framework that allows arbitrary unfoldings
+        of recurrence relations, such as the famous $f_{n+2}=f_{n+1}+f_{n}$;
+        precisely, the main idea is to use each rec relation as a rewriting
+        rule that can be used in pattern matching to instantiate vars in
+        subscripts. 
+
+        \item[https://github.com/massimo-nocentini/on-python] holds study
+        material to explore features provided by the Python language;
+        precisely, he takes into account coroutines, metaprogramming, a double
+        dispatcher and collects some pointers.
+
+        \item[https://github.com/massimo-nocentini/microkanrenpy] a Pythonic
+        implementation of $\mu$Kanren, providing \textit{complete} and
+        \textit{fair} solutions enumerations and \textit{impure logical
+        operators}, paired up with a decent doc and a test suite that covers
+        \textit{all} questions of \textit{The Reasoned Schemer} book.
+
+        \item[https://github.com/massimo-nocentini/master-thesis] holds the
+        \TeX\, sources and implementations of his Master Thesis defended at the
+        University of Florence; precisely, he proposes another characterization
+        of Riordan arrays that exposes their $A$-sequence's generating
+        functions for the Bell subgroup.
+
+        \item[https://github.com/massimo-nocentini/cagd] holds Julia and Python
+        implementations of de Casteljau algorithm, Bezier curves, BSplines,
+        tensor product and triangular Bezier patches; he worked on this to
+        fullfil the  course of Computer Aided Graphic Design at University of
+        Florence, given by prof Alessandra Sestini and prof Costanza Conti.
+
+        \item[https://github.com/massimo-nocentini/theory-of-programming-languages]
+        holds a study of type inference according to Benjamin Pierce
+        \sidenote{Pierce. \textit{Types and Programming Languages}, MIT Press.} and
+        the corresponding implementation using SML/NJ.
+
+        \item[https://github.com/massimo-nocentini/on-the-little-schemer] holds
+        study material and translation of \textit{The Little Schemer} using the
+        \textit{CommonLisp} language in order to understand higher-order
+        programming and play with \verb|lisp-unit|; moreover, a Java
+        implementation of the \verb|Y| combinator is given.
+
+        \item[https://github.com/massimo-nocentini/reasoning-about-little-books]
+        holds study material using the SML language, some derivation of the \verb|Y|
+        combinator are given (even an older one \sidenote{Friedman and Felleisen.
+        \textit{The Little LISPer}, MIT Press.}) and most definitions from
+        the "little books" had been reworked.
+
+        \item[https://github.com/massimo-nocentini/network-reasoner] holds a
+        simulator of gas distribution networks, according to various
+        parameters; joint work with engineer Fabio Tarani and implemented in
+        C\# on the Mono platform.
+        
+
+        
+    \end{description}
+
     \section{Working activity}
 
     During his studies he worked in middle-sized software houses
-    \sidenote{\url{https://www.commitsoftware.it/} and
-    \url{http://www.negens.com/site/home.html}} developing mainly client-server
+    \sidenote{Formerly at \url{https://www.commitsoftware.it/}, lately at
+    \url{http://www.negens.com/site/home.html}.} developing mainly client-server
     applications using industrial-strength languages such as Java and C\#, for
     about eight years, part-time relationships in parallel with his studies.
         
