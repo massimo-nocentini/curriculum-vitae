@@ -1,6 +1,6 @@
 % cv example for classicthesis.sty
 %\documentclass{scrartcl}
-\documentclass[a4paper]{tufte-handout}
+\documentclass[a4paper]{article} % tufte-handout
 %\usepackage[LabelsAligned]{currvita} % nice cv style
 \usepackage{url}
 \usepackage{inputenc}
@@ -17,27 +17,32 @@
 \usepackage{bbold}
 
 % solved in https://github.com/Tufte-LaTeX/tufte-latex/issues/64
-\renewcommand\allcapsspacing[1]{{\addfontfeature{LetterSpace=15}#1}}
-\renewcommand\smallcapsspacing[1]{{\addfontfeature{LetterSpace=10}#1}}
+%\renewcommand\allcapsspacing[1]{{\addfontfeature{LetterSpace=15}#1}}
+%\renewcommand\smallcapsspacing[1]{{\addfontfeature{LetterSpace=10}#1}}
 
-\setmonofont[Scale=0.8]{Menlo}
-\hypersetup{colorlinks}
+%\setmonofont[Scale=0.8]{Menlo}
+%\hypersetup{colorlinks}
 
 \begin{document}
 
     \title{Curriculum Vit\ae\,et Studiorum}
 
-    \author{Massimo Nocentini\newline
-        \small{{massimo.nocentini@gmail.com}},
-        \small{{massimo.nocentini@unifi.it}}\newline
-        \small{{https://github.com/massimo-nocentini}}
+    \author{Massimo Nocentini\footnote{Note for Italian readers -- autorizzo al trattamento dei dati
+		 	personali secondo quanto previsto dalla legge numero 196/03.}
     }
 
     \maketitle
 
-    \section{Personal data}
+    \section{Personal data and contacts}
     
     I was born in Italy on 8 January 1986 and I live in Florence, Italy. 
+
+	I use the email addresses \url{massimo.nocentini@gmail.com} (\emph{personal}) and
+	\url{massimo.nocentini@unifi.it} (\emph{institutional}).
+
+	My personal homepage is \url{https://massimo-nocentini.github.io/}
+	and I publish my code at \url{https://github.com/massimo-nocentini}.
+
 
     \section{Education}
 
@@ -46,9 +51,9 @@
         thesis title \emph{An algebraic and combinatorial study of some
         infinite sequences of numbers supported by symbolic and logic
         computation}, advised by prof.  Donatella
-        Merlini\sidenote{\url{http://local.disia.unifi.it/merlini/}} and
+        Merlini\footnote{\url{http://local.disia.unifi.it/merlini/}} and
         affiliated to the Dipartimento di Statistica, Informatica e
-        Applicazioni (DiSIA~ \sidenote{\url{https://www.disia.unifi.it/}}),
+        Applicazioni (DiSIA~ \footnote{\url{https://www.disia.unifi.it/}}),
         University of Florence, from 2015 to 2019.
         \item Master Laurea degree in Computer Science, voting 110/110 cum laude, thesis title \emph{Patterns in Riordan arrays}, 
             supervised by prof. Donatella Merlini, University of Florence, 2015.
@@ -66,18 +71,18 @@
     A solid base for such methods comes from the field
     of analytic combinatorics, which comprises tools such as generating
     functions, Riordan arrays and the symbolic method. Many interesting books
-    by Flajolet and Sedgewick\sidenote{Flajolet and Sedgewick.
+    by Flajolet and Sedgewick\footnote{Flajolet and Sedgewick.
     \emph{Analytic Combinatorics}, Cambridge University Press, 2009.},
-    Knuth\sidenote{Knuth. \emph{The Art of Computer Programming}, vol.  1-3,
-    Addison-Wesley, 1973.} and Graham et al. \sidenote{Graham, Knuth and
+    Knuth\footnote{Knuth. \emph{The Art of Computer Programming}, vol.  1-3,
+    Addison-Wesley, 1973.} and Graham et al. \footnote{Graham, Knuth and
     Patashnik. \emph{Concrete Mathematics: A Foundation for Computer Science},
     Addison-Wesley, 1994.} exist on those topics; moreover,  see
-    Harrison\sidenote{Harrison. \textit{Handbook of Practical Logic and
+    Harrison\footnote{Harrison. \textit{Handbook of Practical Logic and
     Automated Reasoning}, Cambridge University Press, 2009; and \textit{The HOL
     Light theorem prover}, User manual, 2017.}, Friedman and Felleisen
-    \sidenote{Friedman and Felleisen. \textit{The Little Schemer} and
+    \footnote{Friedman and Felleisen. \textit{The Little Schemer} and
     \textit{The Seasoned Schemer} and \textit{The Little MLer}, MIT Press.} and
-    Byrd et al.\sidenote{Byrd, Friedman and Kiselyov. \textit{The Reasoned
+    Byrd et al.\footnote{Byrd, Friedman and Kiselyov. \textit{The Reasoned
     Schemer}, MIT Press.} for implementation aspects. 
 
     He desires to have a solid grasp of such powerful techniques in order to
@@ -85,9 +90,9 @@
     analytic results about classes of abstract objects in order to show
     \emph{combinatorial meanings} and, possibly, characterizations in terms
     of lattice paths, urn models, bracelet configurations, boards
-    tiling and so on, in the spirit of Benjamin and Quinn \sidenote{Benjamin
+    tiling and so on, in the spirit of Benjamin and Quinn \footnote{Benjamin
     and Quinn. \emph{Proofs that really counts}, Mathematical Association of
-    America, 2003.} and Stanley\sidenote{Stanley. \emph{Enumerative
+    America, 2003.} and Stanley\footnote{Stanley. \emph{Enumerative
     combinatorics. {V}ol. 1\&2}, Cambridge University Press.}.
 
     He believes that abstract and formal contexts should be paired up with
@@ -133,36 +138,45 @@
     \section{Conferences}
 
     \begin{itemize}
-        \item \emph{ESUG}, September 2018, Cagliari, Italy \sidenote{\url{https://esug.github.io/2018-Conference/conf2018.html}}: volunteer student and
-        contributed the talk \textit{Relational Programming in Smalltalk} \sidenote{\url{https://github.com/massimo-nocentini/microkanrenst/releases/download/v1.0/esug.pdf}}.
-        \item \emph{<Programming>}, April 2018, Nice, France \sidenote{\url{https://2018.programming-conference.org}}: participant.
-        \item \emph{ICFP}, September 2017, Oxford, UK \sidenote{\url{https://conf.researchr.org/home/icfp-2017}}: volunteer student.
-        \item \emph{EuroPython}, July 2017, Rimini, Italy \sidenote{\url{https://ep2017.europython.eu/}}: participant.
-        \item \emph{ECOOP}, July 2016, Rome, Italy \sidenote{\url{http://2016.ecoop.org/}}: volunteer student.
+        \item \emph{ESUG2019}, August 2019, Cologne, Germany \footnote{\url{https://esug.github.io/2019-Conference/conf2019.html}}: 
+		contributed the talk \textit{Dancing Links: an educational pearl} \footnote{\url{http://esug.org/data/ESUG2019/03Wednesday/room-B/7-Dancing Links.pdf}}.
+        \item \emph{ESUG2018}, September 2018, Cagliari, Italy \footnote{\url{https://esug.github.io/2018-Conference/conf2018.html}}: volunteer student and
+        contributed the talk \textit{Relational Programming in Smalltalk} \footnote{\url{https://github.com/massimo-nocentini/microkanrenst/releases/download/v1.0/esug.pdf}}.
+        \item \texttt{<Programming>}, April 2018, Nice, France \footnote{\url{https://2018.programming-conference.org}}: participant.
+        \item \emph{ICFP}, September 2017, Oxford, UK \footnote{\url{https://conf.researchr.org/home/icfp-2017}}: volunteer student.
+        \item \emph{EuroPython}, July 2017, Rimini, Italy \footnote{\url{https://ep2017.europython.eu/}}: participant.
+        \item \emph{ECOOP}, July 2016, Rome, Italy \footnote{\url{http://2016.ecoop.org/}}: volunteer student.
         \item \emph{Second International Symposium on Riordan Arrays and Related Topics}, 
-            July 2015 Lecco, Italy \sidenote{\url{https://www.mate.polimi.it/RART2015/}}: contributed a talk about modular Catalan triangle $\mathcal{C}_{\equiv_{2}}$.
+            July 2015 Lecco, Italy \footnote{\url{https://www.mate.polimi.it/RART2015/}}: contributed a talk about modular Catalan triangle $\mathcal{C}_{\equiv_{2}}$.
     \end{itemize}
 
     \section{Seminars and Schools}
 
     \begin{itemize}
-        \item \textit{PhD defense}, University of Florence \sidenote{\url{https://github.com/massimo-nocentini/massimo-nocentini.github.io/releases/download/PhD-defense/talk.pdf}}.
-        \item \textit{summary of $3$rd year} PhD activities, University of Florence \sidenote{\url{https://github.com/massimo-nocentini/massimo-nocentini.github.io/releases/download/v1.0/talk.pdf}}.
-        \item \textit{Logic and Relational Programming} at Logic Department, University of Florence \sidenote{\url{http://massimo-nocentini.github.io/PhD/mkpy/talk.html\#}}.
-        \item \textit{summary of $2$nd year} PhD activities, University of Florence \sidenote{\url{http://massimo-nocentini.github.io/PhD/second-year-summary/talk.html\#}}.
-        \item \textit{Algebraic gf avoiding Riordan patterns} at AORC Open School, Sungkyunkwan University \sidenote{\url{http://shb.skku.edu/_custom/skk/_common/board/download.jsp?attach_no=29038}}.
-        \item \textit{EOIS tools} at AORC Open School, Sungkyunkwan University \sidenote{\url{http://massimo-nocentini.github.io/PhD/skku-aorc-2017/oeistools.html\#}}.
-        \item \textit{summary of $1$st year} PhD activities, University of Florence \sidenote{\url{http://massimo-nocentini.github.io/PhD/first-year-summary/talk.html\#}}.
+        \item \textit{PhD defense}, University of Florence \footnote{\url{https://github.com/massimo-nocentini/massimo-nocentini.github.io/releases/download/PhD-defense/talk.pdf}}.
+        \item \textit{summary of $3$rd year} PhD activities, University of Florence \footnote{\url{https://github.com/massimo-nocentini/massimo-nocentini.github.io/releases/download/v1.0/talk.pdf}}.
+        \item \textit{Logic and Relational Programming} at Logic Department, University of Florence \footnote{\url{http://massimo-nocentini.github.io/PhD/mkpy/talk.html\#}}.
+        \item \textit{summary of $2$nd year} PhD activities, University of Florence \footnote{\url{http://massimo-nocentini.github.io/PhD/second-year-summary/talk.html\#}}.
+        \item \textit{Algebraic gf avoiding Riordan patterns} at AORC Open School, Sungkyunkwan University \footnote{\url{http://shb.skku.edu/_custom/skk/_common/board/download.jsp?attach_no=29038}}.
+        \item \textit{EOIS tools} at AORC Open School, Sungkyunkwan University \footnote{\url{http://massimo-nocentini.github.io/PhD/skku-aorc-2017/oeistools.html\#}}.
+        \item \textit{summary of $1$st year} PhD activities, University of Florence \footnote{\url{http://massimo-nocentini.github.io/PhD/first-year-summary/talk.html\#}}.
     \end{itemize}
 
-    \section{Teaching}
+    \section{Teaching and work in the academia}
 
     He did two classes about \emph{SymPy} to introduce symbolic manipulations
     on top of the Python language, within a course on \emph{Analysis of
     Algorithms} taught by Donatella Merlini at the University of Florence; in
     addition, he translated lab sessions code from Maple to Python collected in
     notebooks available online
-    \sidenote{\url{https://github.com/massimo-nocentini/pacc/tree/master/paa-course}}.
+    \footnote{\url{https://github.com/massimo-nocentini/pacc/tree/master/paa-course}}.
+	
+	From April 2019 to March 2020 he received a contract to collaborate with prof.
+	Daniele Vignoli in a scholarship titled \emph{Rilevamento dell’incertezza economica attraverso stampa e social media}. This research requires that machine learning techniques should be 
+	employed to perform Natural Language Processing on a selection of articles appeared
+	on Italian newspapers; he trained word embeddings based upon the Wikipedia snapshot
+	at 1st of July 2019 and have started the training of a model for the NLP
+	Python package \emph{Spacy} concerning the Italian language.
 
     \section{Exams}
 
@@ -186,7 +200,21 @@
     Recently he joined the \textit{Square Bracket Associates} organization; moreover,
     he pushes into the following repos:
     \begin{description}
-        \item[https://github.com/massimo-nocentini/on-scheme] holds stuff about
+		
+		\item[https://github.com/massimo-nocentini/srfi-41st] holds a port
+		of the SRFI 41\footnote{\url{https://srfi.schemers.org/srfi-41/srfi-41.html}} to
+		provide a basic framework to perform lazy programming in Smalltalk; in particular,
+		the upstream examples are reproduced and it implements Formal Power Series manipulations
+		and monadic structure to be used in the implementation of relational interpreters.
+		
+        \item[https://github.com/massimo-nocentini/dancinglinksst] containts
+		a vanilla Smalltalk implementation of the \emph{Dancing Links} technique introduced 
+		by Donald Knuth in its former article https://arxiv.org/abs/cs/0011047, in particular
+		the implementation offers: (1)~the original ideas together with \emph{at most once} 
+		constraints, (2)~the extension\footnote{\url{https://aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14907}} that uses \emph{Zero-suppressed Binary Decision Diagrams (ZDD)}, (3)~visualizations 
+		using the Roassal2 framework and (4)~test cases about N-Queens and Sudoku problems.
+		
+		\item[https://github.com/massimo-nocentini/on-scheme] holds stuff about
         the Scheme dialect of Lisp. In particular, here he explores
         \textit{continuations, $\mu$Kanren, union-find structures, lazy streams
         memoization} and \textit{abstract computing devices (Landin's SECD machine)}.
@@ -254,7 +282,7 @@
 
         \item[https://github.com/massimo-nocentini/theory-of-programming-languages]
         holds a study of type inference according to Benjamin Pierce
-        \sidenote{Pierce. \textit{Types and Programming Languages}, MIT Press.} and
+        \footnote{Pierce. \textit{Types and Programming Languages}, MIT Press.} and
         the corresponding implementation using SML/NJ.
 
         \item[https://github.com/massimo-nocentini/on-the-little-schemer] holds
@@ -265,7 +293,7 @@
 
         \item[https://github.com/massimo-nocentini/reasoning-about-little-books]
         holds study material using the SML language, some derivation of the \verb|Y|
-        combinator are given (even an older one \sidenote{Friedman and Felleisen.
+        combinator are given (even an older one \footnote{Friedman and Felleisen.
         \textit{The Little LISPer}, MIT Press.}) and most definitions from
         the "little books" had been reworked.
 
@@ -288,7 +316,7 @@
     \section{Working activity}
 
     During his studies he worked in middle-sized software houses
-    \sidenote{Formerly at \url{https://www.commitsoftware.it/}, lately at
+    \footnote{Formerly at \url{https://www.commitsoftware.it/}, lately at
     \url{http://www.negens.com/site/home.html}.} developing mainly client-server
     applications using industrial-strength languages such as Java and C\#, for
     about eight years, part-time relationships in parallel with his studies; in short,
@@ -312,10 +340,6 @@
         \textit{Architetture e metodi per la cooperazione applicativa}; the collaboration
         took two years where he worked on a simulator for gas and water networks.
     \end{itemize}
-        
-    \vfill
-    \noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
-    For Italian readers -- autorizzo al trattamento dei dati personali secondo
-    quanto previsto dalla legge numero 196/03.
+    
     
 \end{document}
