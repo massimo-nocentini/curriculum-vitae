@@ -2,6 +2,7 @@
 %\documentclass{scrartcl}
 \documentclass[a4paper]{article} % tufte-handout
 %\usepackage[LabelsAligned]{currvita} % nice cv style
+\usepackage{euler}
 \usepackage{url}
 \usepackage{inputenc}
 \usepackage{fontenc}
@@ -44,9 +45,10 @@
 	and I publish my code at \url{https://github.com/massimo-nocentini}.
 
 
-    \section{Education}
+    \section{Career}
 
     \begin{itemize}
+		\item Freelancer with VAT id IT-06894000485 created in January 2019.
         \item PhD degree in Mathematics, Computer Science and Statistics,
         thesis title \emph{An algebraic and combinatorial study of some
         infinite sequences of numbers supported by symbolic and logic
@@ -111,12 +113,18 @@
     that those areas are fundamentals and preparatory to tackle more complex
     and demanding problems, machine learning and data mining in particular.
 
-    Moreover, he is collaborating with prof \textit{Marco Maggesi}
-    \footnote{\url{http://web.math.unifi.it/users/maggesi/}} to enhance the HOL
+    Moreover, he enhances the HOL
     Light theorem prover with an extension of the goals and tactics mechanism
     to support the relational paradigm, in the spirit of
     $\mu$kanren\footnote{Hemann and Friedman. \textit{$\mu$Kanren: a Minimal Functional
     Core for Relational Programming}, Scheme2013, Alexandria.}.
+	
+	In parallel, he have started to approach the field of \emph{natural language processing}
+	in order to support a research at DiSIA; in particular, he trained word-embedding models
+	using the Python package \texttt{Gensim} over the complete snapshot of Wikipedia, Italian
+	version, and currently he is training a model for the \texttt{Spacy} package to
+	enhance \emph{Named Entity Recognition} performances of the shipped model for the
+	Italian language.
 
     \section{Papers}
 
@@ -231,8 +239,7 @@
 
         \item[https://github.com/massimo-nocentini/kanren-light] holds a
         parallel goals and tactics mechanism for Harrison's \textit{HOL Light}
-        theorem prover that is inspired by $\mu$Kanren, co-authored with prof
-        Marco Maggesi.
+        theorem prover that is inspired by $\mu$Kanren.
 
         \item[https://github.com/massimo-nocentini/simulation-methods] holds
         the implementation of the framework of matrices functions, namely the
