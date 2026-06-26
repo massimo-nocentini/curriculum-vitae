@@ -1,0 +1,96 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% moderncv themes: 'casual' (default), 'classic', 'oldstyle', 'banking'
+\moderncvstyle[nosymbols]{classic}
+\moderncvcolor{blue}
+\microtypesetup{expansion=false,protrusion=false} % avoids a font-expansion quirk on some TeX installs
+
+\usepackage[scale=0.85]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[italian]{babel}
+\usepackage{url}
+
+% personal data
+\firstname{Massimo}
+\familyname{Nocentini}
+\address{Via Ronco Corto 98}{50143 Firenze, Italia}{}
+\phone[mobile]{+39~320~116~2059}
+\email{massimo.nocentini@gmail.com}
+\email{massimo.nocentini@unifi.it}
+\homepage{github.com/massimo-nocentini}
+\extrainfo{Nazionalità: Italiana \quad Data di nascita: 08/01/1986}
+
+\begin{document}
+\makecvtitle
+
+\section{Pubblicazioni}
+\cvitem{}{Anna Bernasconi, Damiano Di Francesco Maesa, Matteo Loporchio, Andrea Marino, Massimo Nocentini, Laura Ricci. \emph{Systematizing Graph Models for Bitcoin and Designing Algorithms for Large-Distance Analysis}, submitted.}
+\cvitem{}{Daniela Bubboloni, Costanza Catalano, Marco Fanfani, Andrea Marino, Paolo Nesi, Massimo Nocentini. \emph{Public Transport Crowding Estimation via Temporal Graphs}, submitted.}
+\cvitem{}{Marco Maggesi, Massimo Nocentini. \emph{Kanren Light: A Dynamically Semi-Certified Interactive Logic Programming System}, accepted for communication to miniKanren 2020 -- miniKanren and Relational Programming Workshop.}
+\cvitem{}{Donatella Merlini, Massimo Nocentini. \emph{Functions and Jordan canonical forms of Riordan matrices}, in \textit{Linear Algebra and its Applications}, Volume 565, 15 March 2019, Pages 177--207.}
+\cvitem{}{Massimo Nocentini, Donatella Merlini. \emph{Crawling, (pretty) printing and graphing the OEIS}, working paper at DiSIA.}
+\cvitem{}{Donatella Merlini, Massimo Nocentini. \emph{Algebraic generating functions for languages avoiding Riordan patterns}, in \textit{Journal of Integer Sequences}, Volume 21, Article 18.1.3, 2018.}
+
+\section{Esperienza accademica}
+
+\cventry{2024--2026}{Assegnista}{Università degli Studi di Firenze, DISIA}{}{}{Assegno di ricerca \emph{Grafi e applicazioni} sotto la supervisione del Prof. \emph{Andrea Marino}.}
+\cventry{2020}{Assegnista}{Università degli Studi di Firenze, DIMAI}{}{}{Assegno di ricerca \emph{Sviluppo, implementazione ed ottimizzazione di reti neurali LSTM per l'analisi predittiva di time series della grande distribuzione}, sotto la supervisione del Prof. \emph{Marco Maggesi} e del Dott. \emph{Alberto Mancini}.}
+\cventry{2019--2020}{Assegnista}{Università degli Studi di Firenze, DISIA}{}{}{Assegno di ricerca \emph{Economic Uncertainty and Fertility in Europe} sotto la supervisione del Prof. \emph{Daniele Vignoli}.}
+\cventry{2015--2018}{PhD Student in Mathematics, Computer Science and Statistics}{Università degli Studi di Firenze: Dipartimento di Matematica, Informatica e Statistica}{}{}{Percorso di dottorato di ricerca; il curriculum studiorum è disponibile all'indirizzo \url{https://github.com/massimo-nocentini/curriculum-vitae/releases/download/studiorum-v1.1/cv-studiorum.pdf}}
+\cventry{2013--2015}{Borsista}{Università degli Studi di Firenze, scuola di Ingegneria}{}{}{Borsa di studio post-laurea \emph{Architetture e metodi per la cooperazione applicativa} sotto la supervisione del Prof. \emph{Enrico Vicario}.}
+
+\section{Esperienza professionale}
+
+\cventry{dal 2019}{Libero professionista}{Azienda che opera nel settore terziario e dei servizi}{}{}{Sviluppo su piattaforma Pharo Smalltalk e architetture basate su microservizi.}
+\cventry{2013}{Sviluppatore}{Negens Srl, Via Caravaggio 9, 50100 Firenze, Italia}{}{}{Sviluppo di un layer middleware per il controllo di sensori e attuatori: demone sui Raspberry scritto in \texttt{C\#} su piattaforma \emph{Mono}, ogni dispositivo si interfaccia tramite protocollo XMPP; frontend interfaccia web, uso di eventi asincroni, basato su JQuery.}
+\cventry{2007--2012}{Sviluppatore}{Comm.it, Firenze (FI) / Sesto Fiorentino (FI), Italy}{}{}{Sviluppo di applicazioni utilizzando la piattaforma \emph{.NET}, sia basate su architetture standalone e client-server. Alcune applicazioni sviluppate: manutenzione, refactoring e sviluppo di un generatore di sistemi per giochi orientati agli eventi (schedine sportive, totocalcio), interfacciamento via web-services con server Sisal; refactoring e sviluppo di un gestionale per la parte economica, in particolare memorizzazione e manipolazione di fatture, registrazioni in partita doppia, compilazione del libro giornale e di registri IVA.}
+\cventry{2005--2006}{Sviluppatore}{AnemoneLab, Via Umberto Giordano 18, 50018 Scandicci, Italia}{}{}{Progettazione e sviluppo di tre siti web e assistenza tecnica su macchine linux.}
+\cventry{lug.--set. 2005}{Sviluppatore}{Balena S.R.L., Via de Vespucci 210, 50145 Firenze, Italia}{}{}{Realizzazione sito web per la gestione delle attività di produzione e simulazione delle variazioni dei costi, sito per l'intranet locale.}
+\cventry{giu.--lug. 2005}{Stagista}{Exitech, Via delle Mantellate 16, 50129 Firenze, Italia}{}{}{Stesura del manuale utente di un gestionale sviluppato dall'azienda, sia in forma cartacea che digitale, traduzione in lingua inglese, analisi e gestione della base di dati del gestionale.}
+\cventry{set. 2004--gen. 2005}{Sviluppatore}{Balena S.R.L., Via de Vespucci 210, 50145 Firenze, Italia}{}{}{Progettazione e sviluppo di un gestionale che permette di gestire sia il reparto produzione che quello economico.}
+\cventry{giu.--lug. 2004}{Stagista}{I.T.I.S Antonio Meucci, Via di Scandicci 151, 50137 Firenze, Italia}{}{}{Realizzazione delle basi per il progetto della gestione delle assenze e dei ritardi in modo automatico con lettore di codici a barre.}
+
+\section{Istruzione e formazione}
+
+\cventry{2019}{PhD in Informatica}{Università degli Studi di Firenze, scuola di Scienze Matematiche Fisiche e Naturali}{}{}{Tesi: \emph{An algebraic and combinatorial study of some infinite sequences of numbers supported by symbolic and logic}. Supervisore: Prof. Donatella Merlini.}
+\cventry{2015}{Laurea Magistrale in Informatica}{Università degli Studi di Firenze, scuola di Scienze Matematiche Fisiche e Naturali}{}{110 e lode}{Tesi: \emph{Patterns in Riordan Arrays}. Relatore: Prof. Donatella Merlini. Materie principali: theoretical computer science, discrete mathematics.}
+\cventry{2012}{Laurea in Informatica}{Università degli Studi di Firenze, scuola di Scienze Matematiche Fisiche e Naturali}{}{110}{Tesi: \emph{Analisi di reti metaboliche basata su proprietà di connessione}. Relatore: Prof. Pierluigi Crescenzi. Materie principali: theoretical computer science, discrete mathematics.}
+\cventry{2000--2005}{Tecnico Industriale Informatica (progetto ABACUS)}{Istituto Tecnico Industriale \emph{Antonio Meucci}}{}{100}{Materie principali: Informatica, matematica, sistemi, elettronica.}
+
+\section{Capacità e competenze}
+
+\cvitem{Lingua madre}{Italiano}
+\cvitem{Altre lingue}{Inglese (B2: comprensione, ascolto, produzione orale, produzione scritta, interazione orale)}
+
+\cvitem{Competenze sociali}{Sto imparando a raggiungere obiettivi, aiutandosi reciprocamente, nella pratica del \emph{Judo}. Occasionalmente presto servizio volontario presso il \emph{CUI -- Ragazzi del Sole}, un'associazione che aiuta persone disabili.}
+
+\cvitem{Competenze organizzative}{Durante il periodo di lavoro in Comm.it ho appreso molto riguardo l'organizzazione dei processi di produzione software. Sono stato affiancato da persone che hanno lavorato nei laboratori dell'Università di Firenze che mi hanno insegnato la loro metodologia di lavoro. Abbiamo sempre lavorato con più di una persona per progetto, questo è stato molto utile per capire i problemi sia di natura tecnica che umana, come poterli affrontare e risolvere.}
+
+\cvitem{Competenze tecniche}{La maggior parte dei progetti a cui ho partecipato durante il periodo lavorativo hanno avuto come target la piattaforma .NET. Le applicazioni sono state scritte usando il linguaggio \texttt{C\#}, inoltre molti di questi progetti si sono avvalsi di database relazionali: è stato possibile studiare sia il linguaggio TSQL ed in maggior misura \emph{PostgreSQL}, affrontando costrutti complessi come il pivoting e manipolazione di query ricorsive.\newline\newline
+Negli ultimi anni il mio principale ambiente di lavoro e di ricerca personale è \emph{Pharo Smalltalk}, dove ho sviluppato e mantengo numerosi package open-source: strutture dati funzionali e persistenti (skip-list, splay-heap, leftist-heap, binomial-heap, red-black-set, union-find, skew-binary random-access lists), un porting di \emph{microKanren}/\emph{miniKanren} per la programmazion logica relazionale, un port dei \emph{delimited continuations} (\texttt{delimcc.st}), e diversi binding a librerie C (\texttt{libpq}, \texttt{tree-sitter}, \texttt{poppler}, \texttt{pango/cairo}, \texttt{Lua}) per estendere l'immagine Pharo con funzionalità native. Uso inoltre il motore di visualizzazione \emph{Roassal} per rappresentare graficamente grafi e strutture dati.\newline\newline
+Sul fronte dei linguaggi funzionali e logici (\emph{Standard ML}, \emph{OCaml}, \emph{Common Lisp}, \emph{Scheme}) ho lavorato con CHICKEN Scheme scrivendo alcuni \emph{eggs} (binding ZeroMQ, un piccolo server HTTP, un port di ConcurrentML, strutture dati funzionali), ho riportato il codice della serie \emph{Little books} di Friedman e Felleisen (incluso \emph{The Reasoned Schemer}) da Scheme a Standard ML con licenza MIT, e ho approfondito \emph{miniKanren} e l'uso di prover come HOL Light. In Rust ho implementato algoritmi su grafi di grandi dimensioni (stima campionaria della distanza media tra vertici, binding a \texttt{igraph} e \texttt{libpq}), mentre in C mi sono occupato di algoritmi e strutture dati di base (timsort, disegno di alberi non stratificati) e di una piccola libreria per reti neurali (\texttt{kann}), poi richiamata da Pharo via FFI.\newline\newline
+Infine, uso Python e Jupyter per analisi dati, prototipazione rapida e strumenti di supporto alla ricerca (ad esempio il crawler/grapher per l'OEIS), e mi diletto nello studio dei principi dei linguaggi orientati agli oggetti, in particolare Smalltalk e Python stesso.}
+
+\cvitem{Competenze informatiche}{Durante i miei studi ho trovato molto interesse riguardo l'Informatica Teorica. In particolare gli argomenti che preferisco sono la teoria della complessità, dei compilatori e della logica. In parte sto cercando di approcciare i primi studiando il linguaggio simbolico LISP, per i secondi sto studiando i libri di Raymond Smullyan. Durante lo sviluppo della tesi magistrale ho trovato interesse nell'interpretazione combinatoria di classi di oggetti, in particolare di una loro manipolazione algebrica usando la teoria dei \emph{Riordan arrays}.}
+
+\cvitem{Competenze artistiche}{Studi di finali di scacchi e del gioco del \emph{Go}.}
+
+\cvitem{Patente}{Patente di guida B}
+
+\section{Ulteriori informazioni}
+
+\cvitem{Open-source projects}{Vedere \url{https://github.com/massimo-nocentini}}
+
+\section{Liberatoria}
+
+\cvitem{}{Autorizzo al trattamento dei dati personali secondo quanto previsto dalla legge numero 196/03.}
+
+\vspace{1em}
+{\small
+Dichiarazione sostitutiva di certificazione e dichiarazione sostitutiva dell'atto di notorietà ai sensi del D.P.R. 445/28.12.2000.
+
+Il sottoscritto Massimo Nocentini nato a Firenze il 08/01/1986 residente in via del Ronco Corto 98, Firenze 50143, consapevole delle responsabilità penali cui può andare incontro, in caso di dichiarazioni mendaci, ai sensi e per gli effetti di cui all'art.~76 del D.P.R. 445/2000 e consapevole che, ai sensi dell'art.~13, del Regolamento UE 2016/679 (GDPR) dichiara ai sensi degli artt.~46 e 47 del DPR 445/2000.
+}
+
+\end{document}
