@@ -1,0 +1,146 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage[a4paper,top=2.2cm,bottom=2.2cm,left=2.3cm,right=2.3cm]{geometry}
+\usepackage{charter}
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{parskip}
+
+% plain, unnumbered sections with a thin rule underneath
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\vspace{-0.3em}\rule{\linewidth}{0.4pt}]
+\titlespacing{\section}{0pt}{1.4em}{0.6em}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.6em}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+{\Large\bfseries Curriculum Vitae et Studiorum}\\[0.3em]
+{\large Massimo Nocentini}\\[0.2em]
+\small
+Via Ronco Corto 98, 50143 Florence, Italy \quad
+\href{mailto:massimo.nocentini@gmail.com}{massimo.nocentini@gmail.com} \quad
+\href{mailto:massimo.nocentini@unifi.it}{massimo.nocentini@unifi.it}\\
+\url{https://github.com/massimo-nocentini} \quad
+Born in Florence on January 8, 1986
+\end{center}
+
+\section*{Current position}
+
+Since August 2024 I have held a research fellowship (\emph{assegno di ricerca}) at the Department of Statistics, Computer Science, Applications (DISIA), University of Florence, working on the project \emph{Graphs and Applications}, under the supervision of Prof.\ Andrea Marino. In parallel, since January 2019 I have also operated as a freelance software developer (VAT id IT-06894000485).
+
+\section*{Education}
+
+I received my Ph.D.\ in Computer Science in February 2019 from the University of Florence (School of Mathematical, Physical and Natural Sciences), with a thesis entitled \emph{An algebraic and combinatorial study of some infinite sequences of numbers supported by symbolic and logic}, supervised by Prof.\ Donatella Merlini.
+
+Before that, I obtained an M.Sc.\ in Computer Science in 2015 (110/110 cum laude), with the thesis \emph{Patterns in Riordan Arrays}, advised by Prof.\ Donatella Merlini, and a B.Sc.\ in Computer Science in 2012 (110/110), with the thesis \emph{Analysis of metabolic networks based on connectivity properties}, advised by Prof.\ Pierluigi Crescenzi --- both at the same School. My earlier education took place at the \emph{Istituto Tecnico Industriale Antonio Meucci} in Florence (Industrial Technician diploma in Computer Science, ABACUS project, 2005, score 100/100).
+
+\section*{Research path}
+
+The common thread running through my research is the combinatorial and algebraic study of integer sequences and discrete structures, together with a broader, ongoing interest in computational foundations (complexity theory, formal languages, logic and functional programming) that I pursue beyond institutional settings as well.
+
+During my Ph.D.\ (2015--2018) I worked on the theory of \emph{Riordan arrays}, continuing the line of research opened in my master's thesis: in particular, I studied Jordan canonical forms and functions of Riordan matrices in collaboration with Prof.\ Donatella Merlini (published in \emph{Linear Algebra and its Applications}, 2019), and algebraic generating functions for languages avoiding Riordan patterns (\emph{Journal of Integer Sequences}, 2018). In the same period I developed software tools to automatically query and present data from the OEIS (\emph{On-Line Encyclopedia of Integer Sequences}), an activity that combines my mathematical interests with software design.
+
+Between 2019 and 2020 I worked as a research fellow on two separate projects: one in computational demography (\emph{Economic Uncertainty and Fertility in Europe}, supervised by Prof.\ Daniele Vignoli, DISIA) and one in applied research on LSTM neural networks for predictive time-series analysis in large-scale retail (supervised by Prof.\ Marco Maggesi and Dr.\ Alberto Mancini, DIMAI). During this period I also continued, together with Marco Maggesi, work on \emph{Kanren Light}, a dynamically semi-certified relational logic programming system, presented at the miniKanren 2020 workshop.
+
+Since 2024 I have returned to graph-theoretic topics within the \emph{Graphs and Applications} project (supervised by Prof.\ Andrea Marino, DISIA), which has already produced two papers under submission: one on systematizing graph models for Bitcoin and designing algorithms for large-distance analysis (with A.\ Bernasconi, D.\ Di Francesco Maesa, M.\ Loporchio, A.\ Marino, L.\ Ricci), and another on estimating public transport crowding via temporal graphs (with D.\ Bubboloni, C.\ Catalano, M.\ Fanfani, A.\ Marino, P.\ Nesi).
+
+Alongside my institutional work, since 2019 I have also been active as a freelance software developer, mainly on the Pharo Smalltalk platform and microservice-based architectures: an activity that has supported a hands-on, ongoing exploration of persistent data structures, relational logic programming and metaprogramming techniques, much of which is published and maintained on GitHub.
+
+\section*{Research philosophy}
+
+My research concerns (i) the study of formal methods and their applications to the analysis of algorithms and data structures, (ii) supporting them with software abstractions implemented in functional and logic programming languages, and (iii) moving toward the broader field of mechanized mathematics. A solid foundation for this approach comes from analytic combinatorics --- generating functions, Riordan arrays, the symbolic method --- as developed by Flajolet and Sedgewick, Knuth, and Graham, Knuth and Patashnik, complemented by Harrison's work on automated reasoning and HOL Light, and by Friedman, Felleisen and Byrd's \emph{Little books} series on relational and functional programming.
+
+I aim to pair this formal background with combinatorial \emph{interpretations} of analytic results --- in the spirit of Benjamin and Quinn, and of Stanley's \emph{Enumerative Combinatorics} --- expressing them, where possible, in terms of lattice paths, urn models, bracelet configurations or board tilings. I believe abstract, formal results are best understood when paired with working code that exhibits their structure directly; this is the parallel path that leads me to write Lisp, Python, OCaml, Smalltalk and Scheme alongside more formal derivations, and that motivated an extension of HOL Light's goal/tactic mechanism to support a $\mu$Kanren-style relational paradigm.
+
+\section*{Prior professional experience}
+
+Before my Ph.D.\ I gained several years of experience as a software developer (2004--2015), mainly on the .NET/C\# platform, working for companies in the Florence area (Comm.it, Negens Srl, Balena S.R.L., AnemoneLab, Exitech) on projects including: a betting-system generator for the Italian \emph{Sisal} circuit, authenticating dealers over secure channels and producing reports from live odds feeds; an accounting and VAT-register system for small businesses, interfacing with MSSQL using pivot tables, cursors, views and stored procedures, developed jointly with a team in Milan; and a middleware layer for sensor/actuator control on Raspberry Pi boards, interfacing C code with Python scripting over XMPP. This experience provided the practical foundation on which my later academic path was built.
+
+\section*{Selected publications}
+
+\begin{itemize}[leftmargin=1.4em,itemsep=0.3em]
+\item A.\ Bernasconi, D.\ Di Francesco Maesa, M.\ Loporchio, A.\ Marino, M.\ Nocentini, L.\ Ricci. \emph{Systematizing Graph Models for Bitcoin and Designing Algorithms for Large-Distance Analysis}, submitted.
+\item D.\ Bubboloni, C.\ Catalano, M.\ Fanfani, A.\ Marino, P.\ Nesi, M.\ Nocentini. \emph{Public Transport Crowding Estimation via Temporal Graphs}, submitted.
+\item M.\ Maggesi, M.\ Nocentini. \emph{Kanren Light: A Dynamically Semi-Certified Interactive Logic Programming System}, miniKanren and Relational Programming Workshop, 2020.
+\item D.\ Merlini, M.\ Nocentini. \emph{Functions and Jordan canonical forms of Riordan matrices}, \emph{Linear Algebra and its Applications}, 565:177--207, 2019.
+\item D.\ Merlini, M.\ Nocentini. \emph{Algebraic generating functions for languages avoiding Riordan patterns}, \emph{Journal of Integer Sequences}, 21, Article 18.1.3, 2018.
+\item D.\ Merlini, M.\ Nocentini. \emph{Colouring Catalan triangle}, in preparation.
+\item M.\ Nocentini, D.\ Merlini. \emph{Crawling, (pretty) printing and graphing the OEIS}, working paper, DiSIA.
+\end{itemize}
+
+\section*{Conferences}
+
+\begin{itemize}[leftmargin=1.4em,itemsep=0.3em]
+\item \emph{ESUG 2019}, Cologne, Germany, August 2019: talk \emph{Dancing Links: an educational pearl}.
+\item \emph{ESUG 2018}, Cagliari, Italy, September 2018: volunteer student; talk \emph{Relational Programming in Smalltalk}.
+\item \texttt{<Programming>} 2018, Nice, France, April 2018: participant.
+\item \emph{ICFP 2017}, Oxford, UK, September 2017: volunteer student.
+\item \emph{EuroPython 2017}, Rimini, Italy, July 2017: participant.
+\item \emph{ECOOP 2016}, Rome, Italy, July 2016: volunteer student.
+\item \emph{2nd International Symposium on Riordan Arrays and Related Topics}, Lecco, Italy, July 2015: talk on the modular Catalan triangle $\mathcal{C}_{\equiv_2}$.
+\end{itemize}
+
+\section*{Seminars and schools}
+
+\begin{itemize}[leftmargin=1.4em,itemsep=0.3em]
+\item Ph.D.\ defense talk, University of Florence.
+\item Yearly summaries of Ph.D.\ activities (1st, 2nd and 3rd year), University of Florence.
+\item \emph{Logic and Relational Programming}, Logic Department, University of Florence.
+\item \emph{Algebraic generating functions avoiding Riordan patterns} and \emph{OEIS tools}, AORC Open School, Sungkyunkwan University, South Korea, 2017.
+\end{itemize}
+
+\section*{Teaching}
+
+I taught two classes on \emph{SymPy} to introduce symbolic computation on top of Python, within the \emph{Analysis of Algorithms} course given by Prof.\ Donatella Merlini at the University of Florence, and ported the corresponding lab sessions from Maple to Python. Between April 2019 and March 2020, under a scholarship with Prof.\ Daniele Vignoli (\emph{Detecting economic uncertainty through press and social media}), I applied natural language processing techniques --- including word embeddings trained on an Italian Wikipedia snapshot and a Spacy NER model for Italian --- to a corpus of newspaper articles.
+
+\section*{Ph.D.\ coursework}
+
+\begin{itemize}[leftmargin=1.4em,itemsep=0.3em]
+\item Introduction to process calculi and related type systems (R.\ Pugliese, I.\ Castellani)
+\item Mathematical methods for Computer Science (E.\ Barcucci)
+\item Analysis of algorithms and data structures through Riordan arrays (D.\ Merlini)
+\item Bayesian methods for high-dimensional data (F.\ Stingo)
+\item Statistical learning (G.M.\ Marchetti)
+\item Advanced programming techniques (L.\ Bettini)
+\item Mathematical logic (B.\ Donati)
+\end{itemize}
+
+\section*{Selected open-source projects}
+
+A more complete and up-to-date list is available at \url{https://github.com/massimo-nocentini}; a few projects that best represent my interests:
+
+\begin{itemize}[leftmargin=1.4em,itemsep=0.3em]
+\item \textbf{dancinglinksst} --- a Smalltalk implementation of Knuth's \emph{Dancing Links} technique, including the ZDD-based extension, Roassal2 visualizations, and N-Queens/Sudoku test cases.
+\item \textbf{microkanrenst} / \textbf{microkanrenpy} --- Smalltalk and Python implementations of $\mu$Kanren (triangular substitutions, complete solution enumeration, structural induction via double dispatch), the former presented at ESUG 2018.
+\item \textbf{kanren-light} --- a parallel goals/tactics mechanism for Harrison's HOL Light theorem prover, inspired by $\mu$Kanren.
+\item \textbf{srfi-41st} --- a Smalltalk port of SRFI 41 for lazy programming, including formal power series manipulation and monadic structures for relational interpreters.
+\item \textbf{oeis-tools} --- a Python suite (crawler, pretty-printer, grapher) to mine the OEIS, using \texttt{async}/\texttt{await}.
+\item \textbf{on-scheme} --- explorations in Scheme: continuations, $\mu$Kanren, union-find, lazy streams with memoization, and Landin's SECD machine.
+\item \textbf{reasoning-about-little-books} / \textbf{on-the-little-schemer} --- Standard ML and Common Lisp reworkings of Friedman and Felleisen's \emph{Little books} series, with several derivations of the \texttt{Y} combinator.
+\item \textbf{theory-of-programming-languages} --- a study of type inference following Pierce's \emph{Types and Programming Languages}, implemented in SML/NJ.
+\item \textbf{network-reasoner} --- a gas/water distribution network simulator, joint work with eng.\ Fabio Tarani, implemented in C\# on Mono.
+\end{itemize}
+
+\section*{Technical and computational skills}
+
+Languages and environments I work with regularly: Pharo Smalltalk (persistent data structures, FFI bindings to C libraries, the Roassal visualization engine), CHICKEN Scheme, Standard ML, OCaml, Common Lisp, Rust, C, Python/Jupyter, C\#/.NET, SQL (TSQL, PostgreSQL). Cross-cutting research interests: graph theory, algebraic combinatorics, relational logic programming (miniKanren), delimited continuations, computational complexity theory.
+
+\section*{Languages}
+
+Italian (native); English (B2 in reading comprehension, listening, spoken production and interaction, and writing).
+
+\section*{Personal data processing}
+
+I authorize the processing of the personal data contained in this curriculum in accordance with EU Regulation 2016/679 (GDPR) and applicable law.
+
+\end{document}
